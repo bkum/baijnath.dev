@@ -17,7 +17,7 @@
 
 <a href="https://baijnath-blog.vercel.app"><img src="https://raw.githubusercontent.com/bkum/baijnath.dev/main/public/static/images/projects/baijnath-blog.png" alt="Image baijnath's Blog Website" /></a>
 
-This blog site takes inspiration from [karhdo.dev](https://karhdo-blog.vercel.app). I appreciate [Leo Huynh](https://twitter.com/hta218_) and [Timothy Lin](https://twitter.com/timlrxx) for their contribution to this minimal, lightweight, and highly customizable blog starter.
+This blog site takes inspiration from [karhdo.dev](https://karhdo-blog.vercel.app). 
 
 
 ---
