@@ -1,5 +1,5 @@
-import Link from '@/components/Link';
-import Twemoji from './Twemoji';
+import Link from '@/components/Link'
+import Twemoji from './Twemoji'
 
 const BlogLinks = () => {
   return (
@@ -33,7 +33,7 @@ const BlogLinks = () => {
         </Link>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default BlogLinks;
+export default BlogLinks

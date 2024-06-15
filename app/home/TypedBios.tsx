@@ -1,12 +1,12 @@
 'use client'
 
-import React from 'react';
-import Typed from 'typed.js';
+import React from 'react'
+import Typed from 'typed.js'
 
 import { Twemoji } from './Twemoji'
 
 const TypedBios = () => {
-  const el = React.useRef(null);
+  const el = React.useRef(null)
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
@@ -15,12 +15,12 @@ const TypedBios = () => {
       backSpeed: 10,
       loop: true,
       backDelay: 1000,
-    });
+    })
 
     return () => {
-      typed.destroy();
-    };
-  }, []);
+      typed.destroy()
+    }
+  }, [])
 
   return (
     <div>
@@ -35,7 +35,7 @@ const TypedBios = () => {
           My first programming language I learned was <b className="font-medium">C</b>.
         </li>
         <li>I love software development.</li>
-         <li>
+        <li>
           I work mostly with <b className="font-medium">Java, Spring/Spring-boot </b> technologies.
         </li>
         <li>
@@ -53,7 +53,7 @@ const TypedBios = () => {
       </ul>
       <span ref={el} className="text-neutral-900 dark:text-neutral-200" />
     </div>
-  );
-};
+  )
+}
 
-export default TypedBios;
+export default TypedBios

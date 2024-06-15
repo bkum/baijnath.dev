@@ -1,25 +1,24 @@
-import { ReactNode } from 'react';
-import type { Authors } from 'contentlayer/generated';
-import TOCInline  from 'pliny/ui/TOCInline';
-import { Toc } from 'pliny/mdx-plugins/remark-toc-headings';
+import { ReactNode } from 'react'
+import type { Authors } from 'contentlayer/generated'
+import TOCInline from 'pliny/ui/TOCInline'
+import { Toc } from 'pliny/mdx-plugins/remark-toc-headings'
 
-import siteMetadata from '@/data/siteMetadata';
-import ScrollTopAndComment from '@/components/ScrollTopAndComment';
+import siteMetadata from '@/data/siteMetadata'
+import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 
 interface Props {
-  children: ReactNode;
-  toc: Toc;
-  content: Omit<Authors, '_id' | '_raw' | 'body'>;
+  children: ReactNode
+  toc: Toc
+  content: Omit<Authors, '_id' | '_raw' | 'body'>
 }
 
 export default function AuthorLayout({ children, content, toc }: Props) {
-  const { title, headerTitle } = siteMetadata;
+  const { title, headerTitle } = siteMetadata
 
-  const description = 'My professional career, experiences, and skills.';
+  const description = 'My professional career, experiences, and skills.'
 
   return (
     <>
-
       <ScrollTopAndComment />
 
       <div className="resume">
@@ -27,7 +26,9 @@ export default function AuthorLayout({ children, content, toc }: Props) {
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Resume
           </h1>
-          <p className="text-base text-gray-500 dark:text-gray-400 md:text-lg md:leading-7">{description}</p>
+          <p className="text-base text-gray-500 dark:text-gray-400 md:text-lg md:leading-7">
+            {description}
+          </p>
         </header>
 
         <div className="border border-t border-gray-200 dark:border-gray-700" />
@@ -44,5 +45,5 @@ export default function AuthorLayout({ children, content, toc }: Props) {
         </main>
       </div>
     </>
-  );
+  )
 }

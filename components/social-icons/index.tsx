@@ -36,7 +36,7 @@ type SocialIconProps = {
 
 const SocialIcon = ({ kind, href, size = 8 }: SocialIconProps) => {
   if (kind === 'mail') {
-    href = 'mailto:' + href;
+    href = 'mailto:' + href
   }
 
   const SocialSvg = components[kind]

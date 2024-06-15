@@ -7,7 +7,7 @@ const ShortDescription = () => {
       <p>I started this blog to record my progress, skill and share my knowledge.</p>
       <p>I’m eager to meet and connect other, so feel free to connect!</p>
     </div>
-  );
-};
+  )
+}
 
-export default ShortDescription;
+export default ShortDescription

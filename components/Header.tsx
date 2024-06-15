@@ -13,19 +13,19 @@ const Header = () => {
       <div>
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">
-          <div className="flex items-center justify-between" data-umami-event="logo">
-            <div className="mr-3 flex items-center justify-center">
-              <NextImage
-                src="/static/images/logo.jpg"
-                alt="Leo's Blog logo"
-                width={45}
-                height={45}
-                className="rounded-full"
-              />
+            <div className="flex items-center justify-between" data-umami-event="logo">
+              <div className="mr-3 flex items-center justify-center">
+                <NextImage
+                  src="/static/images/logo.jpg"
+                  alt="Leo's Blog logo"
+                  width={45}
+                  height={45}
+                  className="rounded-full"
+                />
+              </div>
             </div>
-          </div>
             {typeof siteMetadata.headerTitle === 'string' ? (
-              <div className="hidden h-6 text-2xl font-serif sm:block">
+              <div className="hidden h-6 font-serif text-2xl sm:block">
                 {siteMetadata.headerTitle}
               </div>
             ) : (

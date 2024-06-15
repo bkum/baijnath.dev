@@ -3,22 +3,20 @@
 import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 
-
 const ThemeSwitch = () => {
-  const [mounted, setMounted] = useState(true);
-  const { theme, setTheme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(true)
+  const { theme, setTheme, resolvedTheme } = useTheme()
 
   // When mounted on client, now we can show the UI
-  useEffect(() => setMounted(true), []);
- let isDark = theme === 'dark' || resolvedTheme === 'dark'
+  useEffect(() => setMounted(true), [])
+  const isDark = theme === 'dark' || resolvedTheme === 'dark'
 
   return (
     <button
       aria-label="Toggle Dark Mode"
-      className="ml-1 mr-1 h-8 w-8 rounded p-1 hover:bg-gray-200 dark:hover:bg-primary sm:ml-4"
+      className="dark:hover:bg-primary ml-1 mr-1 h-8 w-8 rounded p-1 hover:bg-gray-200 sm:ml-4"
       onClick={() => setTheme(isDark ? 'light' : 'dark')}
     >
-
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
@@ -35,7 +33,6 @@ const ThemeSwitch = () => {
           <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
         )}
       </svg>
-
     </button>
   )
 }

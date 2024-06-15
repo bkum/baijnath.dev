@@ -127,7 +127,6 @@ export default function ListLayoutWithTags({
               </div>
             )}
           </div>
-          
         </div>
       </div>
     </>

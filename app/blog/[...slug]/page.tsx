@@ -1,7 +1,7 @@
 import 'css/prism.css'
 import 'css/twemoji.css'
 import 'katex/dist/katex.css'
-import '@/css/resume.css';
+import '@/css/resume.css'
 
 import PageTitle from '@/components/PageTitle'
 import { components } from '@/components/MDXComponents'
