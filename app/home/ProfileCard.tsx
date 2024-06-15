@@ -6,7 +6,7 @@ import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { ProfileCardInfo } from './ProfileInfo'
 
 export function ProfileCard() {
-  let ref = useRef(null)
+  let ref = useRef<HTMLInputElement>(null)
   let [style, setStyle] = useState<React.CSSProperties>({})
 
   let onMouseMove = useCallback((e: MouseEvent) => {
