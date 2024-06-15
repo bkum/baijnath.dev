@@ -14,3 +14,5 @@ export const components: MDXComponents = {
   table: TableWrapper,
   BlogNewsletterForm,
 }
+
+export type { MDXComponents as default }

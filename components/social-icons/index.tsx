@@ -5,9 +5,12 @@ import {
   Youtube,
   Linkedin,
   Twitter,
+  X,
   Mastodon,
   Threads,
   Instagram,
+  MapPin,
+  Briefcase,
 } from './icons'
 
 const components = {
@@ -17,9 +20,12 @@ const components = {
   youtube: Youtube,
   linkedin: Linkedin,
   twitter: Twitter,
+  x: X,
   mastodon: Mastodon,
   threads: Threads,
   instagram: Instagram,
+  mappin: MapPin,
+  briefcase: Briefcase,
 }
 
 type SocialIconProps = {
@@ -29,8 +35,9 @@ type SocialIconProps = {
 }
 
 const SocialIcon = ({ kind, href, size = 8 }: SocialIconProps) => {
-  if (!href || (kind === 'mail' && !/^mailto:\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(href)))
-    return null
+  if (kind === 'mail') {
+    href = 'mailto:' + href;
+  }
 
   const SocialSvg = components[kind]
 
