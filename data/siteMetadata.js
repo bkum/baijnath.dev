@@ -6,7 +6,7 @@ const siteMetadata = {
   description: '',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://baijnath-dev.vercel.app',
+  siteUrl: 'https://www.baijnath.dev',
   siteRepo: 'https://github.com/bkum/baijnath.dev',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
