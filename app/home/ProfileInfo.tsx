@@ -51,7 +51,7 @@ export const ProfileCardInfo = () => {
           </a>
 
           <span className="text-gray-400 dark:text-gray-500">|</span>
-          <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size={5} />
+          <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size={6} />
           <a
             target="_blank"
             href={siteMetadata.linkedin}
