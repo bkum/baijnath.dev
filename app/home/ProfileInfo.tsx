@@ -1,5 +1,5 @@
 import siteMetadata from '@/data/siteMetadata'
-import Twemoji from './Twemoji'
+import Emoji from '@/components/Emoji'
 
 import { Briefcase, MapPin, Mail } from 'lucide-react'
 import SocialIcon from '@/components/social-icons'
@@ -11,13 +11,13 @@ export const ProfileCardInfo = () => {
       <h5 className="text-gray-700 dark:text-gray-400">Learner | Builder</h5>
       <div className="mb-2 mt-2 space-y-3">
         <div className="flex items-center">
-          <SocialIcon kind="briefcase" href={siteMetadata.office} size={4} />
+          <Emoji emoji="briefcase" />
           <p className="px-2">
             Team Lead @{' '}
             <a
               className="hover:underline"
               target="_blank"
-              href="https://www.softwareag.com/"
+              href={siteMetadata.office}
               rel="noreferrer"
             >
               Software AG
@@ -25,15 +25,15 @@ export const ProfileCardInfo = () => {
           </p>
         </div>
         <div className="flex items-center">
-          <SocialIcon kind="mappin" href={siteMetadata.map} size={4} />
+          <Emoji emoji="world-map"/>
           <p className="px-2">
             <a href={siteMetadata.map}>
-              Bangalore, KA, India <Twemoji emoji="viet-nam-india-flag" />
+              Bangalore, KA, India <Emoji emoji="flag-india" />
             </a>
           </p>
         </div>
         <div className="flex items-center">
-          <SocialIcon kind="mail" href={siteMetadata.email} size={4} />
+          <Emoji emoji="e-mail"/>
           <p className="px-2">
             <a href={`mailto:${siteMetadata.email}`}>{siteMetadata.email}</a>
           </p>

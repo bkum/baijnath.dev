@@ -3,7 +3,7 @@
 import React from 'react'
 import Typed from 'typed.js'
 
-import { Twemoji } from './Twemoji'
+import { Emoji } from '@/components/Emoji'
 
 const TypedBios = () => {
   const el = React.useRef(null)
@@ -42,13 +42,13 @@ const TypedBios = () => {
           I'm an independent introvert, and a technophile obsessed with the latest technology.
         </li>
         <li>
-          I love cooking and keeps experimenting with recipes <Twemoji emoji="twa-cooking" />.
+          I love cooking and keeps experimenting with recipes <Emoji emoji="cooking" />.
         </li>
         <li>
-          I love listening <Twemoji emoji="musical-keyboard" />.
+          I love listening <Emoji emoji="musical-keyboard" />.
         </li>
         <li>
-          Currently I am learning to play <Twemoji emoji="musical-keyboard" />.
+          Currently I am learning to play <Emoji emoji="musical-keyboard" />.
         </li>
       </ul>
       <span ref={el} className="text-neutral-900 dark:text-neutral-200" />

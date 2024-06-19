@@ -4,7 +4,7 @@ import Greeting from './home/Greeting'
 import Heading from './home/Heading'
 import TypedBios from './home/TypedBios'
 import ShortDescription from './home/ShortDescription'
-import { Twemoji } from './home/Twemoji'
+import { Emoji } from '@/components/Emoji'
 import { ProfileCard } from './home/ProfileCard'
 import BlogLinks from './home/BlogLinks'
 
@@ -25,7 +25,7 @@ export default function Home({ posts }) {
             <BlogLinks />
             <p className="my-3 flex">
               <span className="mr-2">Happy reading</span>
-              <Twemoji emoji="clinking-beer-mugs" />
+              <Emoji emoji="clinking-beer-mugs" />
             </p>
           </div>
         </div>

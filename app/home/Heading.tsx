@@ -1,5 +1,13 @@
 import siteMetadata from '@/data/siteMetadata'
-import { Twemoji } from './Twemoji'
+import { Emoji } from '@/components/Emoji'
+
+function getFlagEmoji(countryCode) {
+  const codePoints = countryCode
+    .toUpperCase()
+    .split('')
+    .map(char =>  127397 + char.charCodeAt());
+  return String.fromCodePoint(...codePoints);
+}
 
 const Heading = () => {
   return (
@@ -7,7 +15,7 @@ const Heading = () => {
       I'm <span>{siteMetadata.author}</span> - a <span>Software Engineer</span> & a{' '}
       <span>Father</span> from <span className="hidden">Bangalore, India</span>
       <span className="absolute ml-1.5 inline-flex pt-[3px]">
-        <Twemoji emoji="flag-india" />
+        <Emoji emoji="flag-india" />
       </span>
     </h1>
   )
