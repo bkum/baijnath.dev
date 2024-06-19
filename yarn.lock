@@ -3245,22 +3245,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash.kebabcase@npm:^4.1.9":
-  version: 4.1.9
-  resolution: "@types/lodash.kebabcase@npm:4.1.9"
-  dependencies:
-    "@types/lodash": "*"
-  checksum: 66f54d6f94813c6d28896d80a9205d032baa31642f7fd8f74fcc67d113c023eced63ae643143dbbe05bd90866a6cc51b44c632a3b3651a69e8867cf779593a6a
-  languageName: node
-  linkType: hard
-
-"@types/lodash@npm:*, @types/lodash@npm:4.17.5":
-  version: 4.17.5
-  resolution: "@types/lodash@npm:4.17.5"
-  checksum: 3c9bb15772509f0ecb40428531863dbc3f064f2bf34bbccc2ce2b2923c69fb0868aec7e357b1d97fd0d7f7e435a014ea5c1adef8a64715529887179c97a5a823
-  languageName: node
-  linkType: hard
-
 "@types/mdast@npm:^4.0.0":
   version: 4.0.4
   resolution: "@types/mdast@npm:4.0.4"
@@ -7484,13 +7468,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.21":
-  version: 4.17.21
-  resolution: "lodash@npm:4.17.21"
-  checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
-  languageName: node
-  linkType: hard
-
 "log-update@npm:^5.0.1":
   version: 5.0.1
   resolution: "log-update@npm:5.0.1"
@@ -7551,15 +7528,6 @@ __metadata:
   dependencies:
     yallist: ^3.0.2
   checksum: c154ae1cbb0c2206d1501a0e94df349653c92c8cbb25236d7e85190bcaf4567a03ac6eb43166fabfa36fd35623694da7233e88d9601fbf411a9a481d85dbd2cb
-  languageName: node
-  linkType: hard
-
-"lucide-react@npm:^0.395.0":
-  version: 0.395.0
-  resolution: "lucide-react@npm:0.395.0"
-  peerDependencies:
-    react: ^16.5.1 || ^17.0.0 || ^18.0.0
-  checksum: 0f69638040c60c4929546b6e98d7682ec91b739f6fd21f7f38812456b9512b59597656b990e7bd8de67ff94ce1f00657820c3c86f8ec4ab7d7c57d1d76612b2c
   languageName: node
   linkType: hard
 
@@ -10968,8 +10936,6 @@ __metadata:
     "@svgr/webpack": ^8.0.1
     "@tailwindcss/forms": ^0.5.7
     "@tailwindcss/typography": ^0.5.12
-    "@types/lodash": 4.17.5
-    "@types/lodash.kebabcase": ^4.1.9
     "@types/mdx": ^2.0.12
     "@types/react": ^18.2.73
     "@typescript-eslint/eslint-plugin": ^6.1.0
@@ -10989,8 +10955,6 @@ __metadata:
     husky: ^9.0.0
     image-size: 1.0.0
     lint-staged: ^13.0.0
-    lodash: ^4.17.21
-    lucide-react: ^0.395.0
     next: 14.2.3
     next-contentlayer2: 0.4.6
     next-themes: ^0.3.0
