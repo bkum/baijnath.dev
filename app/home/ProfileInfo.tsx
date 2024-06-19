@@ -39,7 +39,7 @@ export const ProfileCardInfo = () => {
           </p>
         </div>
         <div className="flex items-center gap-1.5">
-          <SocialIcon kind="github" href={siteMetadata.github} size={4} />
+          <SocialIcon kind="github" href={siteMetadata.github} size={5} />
           <a
             target="_blank"
             href={siteMetadata.github}
@@ -51,7 +51,7 @@ export const ProfileCardInfo = () => {
           </a>
 
           <span className="text-gray-400 dark:text-gray-500">|</span>
-          <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size={4} />
+          <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size={5} />
           <a
             target="_blank"
             href={siteMetadata.linkedin}
@@ -63,7 +63,7 @@ export const ProfileCardInfo = () => {
           </a>
 
           <span className="text-gray-400 dark:text-gray-500">|</span>
-          <SocialIcon kind="x" href={siteMetadata.x} size={4} />
+          <SocialIcon kind="x" href={siteMetadata.x} size={5} />
           <a
             target="_blank"
             href={siteMetadata.x}
