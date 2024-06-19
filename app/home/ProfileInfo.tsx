@@ -25,7 +25,7 @@ export const ProfileCardInfo = () => {
           </p>
         </div>
         <div className="flex items-center">
-          <Emoji emoji="world-map"/>
+          <Emoji emoji="world-map" />
           <p className="px-2">
             <a href={siteMetadata.map}>
               Bangalore, KA, India <Emoji emoji="flag-india" />
@@ -33,7 +33,7 @@ export const ProfileCardInfo = () => {
           </p>
         </div>
         <div className="flex items-center">
-          <Emoji emoji="e-mail"/>
+          <Emoji emoji="e-mail" />
           <p className="px-2">
             <a href={`mailto:${siteMetadata.email}`}>{siteMetadata.email}</a>
           </p>
